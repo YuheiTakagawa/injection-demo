@@ -1,1 +1,3 @@
 *.core
+server/server
+client/pictures/*
