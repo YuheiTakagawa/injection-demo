@@ -8,12 +8,12 @@ Server side show data(output of client) from socket which made by injection code
 # Setting IP Address(Hard code), run server
 cd server
 gcc -o server server.c
-setup.sh
+./setup.sh
 
 # From other terminal, sending command to client with netcat. Destination IP isHard code.
-send.sh '<command>'
+./send.sh '<command>'
 # For example, target command is python.
-# send.sh 'python'
+# ./send.sh 'python'
 ```
 
 
@@ -23,11 +23,11 @@ Client size show data.
 ```
 # Setting IP Address(Hard code), run injection daemon.
 cd client
-setup.sh
+./setup.sh
 
 # From other terminal, running command
 # For example, target command is python show images.
-showimages.py <IMAGE PATH>
+./showimages.py <IMAGE PATH>
 ```
 
 
