@@ -6,12 +6,14 @@ This repository use ELF(testpy) which made from my private repository.
 Server side show data(output of client) from socket which made by injection code.
 ```
 # Setting IP Address(Hard code), run server
-server/setup.sh
+cd server
+gcc -o server server.c
+setup.sh
 
 # From other terminal, sending command to client with netcat. Destination IP isHard code.
-server/send.sh '<command>'
+send.sh '<command>'
 # For example, target command is python.
-# server/send.sh 'python'
+# send.sh 'python'
 ```
 
 
@@ -20,11 +22,12 @@ Client size show data.
 
 ```
 # Setting IP Address(Hard code), run injection daemon.
-client/setup.sh
+cd client
+setup.sh
 
 # From other terminal, running command
 # For example, target command is python show images.
-client/showimages.py <IMAGE PATH>
+showimages.py <IMAGE PATH>
 ```
 
 
